@@ -17,7 +17,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">I-Notebook</Link>
+          <Link className="navbar-brand" to="/"><span className="fw-bold" to="/">I<span style={{ color: '#6f42c1' }}>Note</span>book</span></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -31,9 +31,9 @@ const Navbar = () => {
               </li>
             </ul>
             {!localStorage.getItem('auth-token') ? <form className="d-flex" role="search">
-              <Link className="btn btn-outline-light" to="/login" role="button">Log In</Link>
-              <Link className="btn btn-outline-light mx-3" to="/signup" role="button">Sign Up</Link>
-            </form> : <button onClick={handleLogout} className="btn btn-outline-light mx-3">Log Out</button>}
+              <Link className="btn btn-outline-light" to="/login" role="button">Log <span style={{ color: '#6f42c1' }}>In</span></Link>
+              <Link className="btn btn-outline-light mx-3" to="/signup" role="button">Sign <span style={{ color: '#6f42c1' }}>Up</span></Link>
+            </form> : <button onClick={handleLogout} className="btn btn-outline-light mx-3">Log <span style={{ color: '#6f42c1' }}>Out</span></button>}
           </div>
         </div>
       </nav>

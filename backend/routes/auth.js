@@ -59,7 +59,7 @@ router.post('/createuser', [
         //*     })
         //* res.send(req.body);
         const data = {
-            user: {
+            user: { 
                 id: user.id,
             }
         }
